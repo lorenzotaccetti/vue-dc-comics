@@ -167,6 +167,10 @@ export default {
             color: white;
             font-size: 20px;
             cursor: pointer;
+
+            &:hover{
+                background-color: $brand-secondary-color;
+            }
         }
     }
 
