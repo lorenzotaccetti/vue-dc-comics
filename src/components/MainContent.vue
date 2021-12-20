@@ -1,6 +1,6 @@
 <template>
     <div class="main-content">
-        <h2>Ciao</h2>
+        __> Content goes here __
     </div>
 </template>
 
@@ -11,5 +11,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../style/variables';
 
+.main-content{
+    background-color: $brand-third-color;
+    width: 100%;
+    color: white;
+    padding: 45px 0;
+    font-size: 20px;
+}
 </style>
