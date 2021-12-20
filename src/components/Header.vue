@@ -3,7 +3,7 @@
         <div class="logo">
             <img src="../assets/img/dc-logo.png" alt="">
         </div>
-        <div class="links" v-for="(element, index) in links" :key="index" :class="{active: element.current}">
+        <div class="links" v-for="(element, index) in links" :key="index">
             {{element.text}}
         </div>
     </div>
@@ -90,7 +90,7 @@ export default {
         color: $brand-primary-color;
         cursor: pointer;
 
-        &.active{
+        &:hover{
             color: $brand-secondary-color;
             border-bottom: 4px solid $brand-secondary-color;
         }
