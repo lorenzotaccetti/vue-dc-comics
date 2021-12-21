@@ -148,10 +148,10 @@ export default {
         .comic-price{
             display: none;
         }
-    }
 
-    .single-box:hover .comic-price{
-        display: block;
+        &:hover .comic-price{
+            display: inline-block;
+        }
     }
 }
 
