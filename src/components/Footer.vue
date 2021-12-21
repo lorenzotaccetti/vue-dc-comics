@@ -145,6 +145,10 @@ export default {
                 a{
                     text-decoration: none;
                     color: #7b7879;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
         }

@@ -44,6 +44,7 @@ export default {
         align-items: center;
         margin: 40px 40px;
         text-transform: uppercase;
+        cursor: pointer;
 
         img{
             width: 60px;
