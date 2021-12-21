@@ -138,6 +138,7 @@ export default {
         display: flex;
         font-size: 18px;
         flex-direction: column;
+        cursor: pointer;
 
         .comic-image{
             width: 100%;
@@ -184,7 +185,7 @@ export default {
         text-decoration: none;
         color: white;
         background-color: $brand-secondary-color;
-        border: 3px solid $brand-secondary-color;
+        border: 2px solid $brand-secondary-color;
         padding: 10px 70px;
         font-size: 20px;
         text-transform: uppercase;
