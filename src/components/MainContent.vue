@@ -14,7 +14,11 @@
                 </div>
             </div>
         </div>
+        <div class="load-button">
+            <a href="#">Load More</a>
+        </div>
     </div>
+
 </template>
 
 <script>
@@ -119,8 +123,7 @@ export default {
     width: 80%;
     margin: auto;
     color: white;
-    padding: 65px 0;
-    font-size: 20px;
+    padding: 65px 0 30px;
     display: flex;
     flex-wrap: wrap;
 
@@ -128,17 +131,18 @@ export default {
         width: calc(100% / 6);
         text-transform: uppercase;
         display: flex;
+        font-size: 18px;
         flex-direction: column;
 
         .comic-image{
-            height: 60%;
-            width: 100%;
+            height: 50%;
             overflow: hidden;
             margin-bottom: 20px;
         }
 
         .comic-title{
             margin-bottom: 10px;
+            width: 80%;
         }
 
         .comic-price{
@@ -148,6 +152,26 @@ export default {
 
     .single-box:hover .comic-price{
         display: block;
+    }
+}
+
+.load-button{
+    padding-bottom: 50px;
+    text-align: center;
+
+    a{
+        text-decoration: none;
+        color: white;
+        background-color: $brand-secondary-color;
+        border: 3px solid $brand-secondary-color;
+        padding: 10px 70px;
+        font-size: 20px;
+        text-transform: uppercase;
+
+        &:hover{
+            background-color: white;
+            color: $brand-secondary-color;
+        }
     }
 }
 </style>
