@@ -35,10 +35,4 @@ export default {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.blue-banner{
-  width: 100%;
-  height: 100px;
-  background-color: $brand-secondary-color;
-}
-
 </style>

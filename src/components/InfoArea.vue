@@ -1,25 +1,27 @@
 <template>
-    <div class="info-area">
-        <div class="single-box">
-            <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-            Digital Comics
-        </div>
-        <div class="single-box">
-            <img src="../assets/img/buy-comics-merchandise.png" alt="">
-            DC Merchandise
-        </div>
-        <div class="single-box">
-            <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-            Subscription
-        </div>
-        <div class="single-box">
-            <img class="smaller" src="../assets/img/buy-comics-shop-locator.png" alt="">
-            Comic Shop Locator
-        </div>
-        <div class="single-box">
-            <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-            DC Power Visa
-        </div>
+    <div class="container">
+        <div class="info-area">
+            <div class="single-box">
+                <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                Digital Comics
+            </div>
+            <div class="single-box">
+                <img src="../assets/img/buy-comics-merchandise.png" alt="">
+                DC Merchandise
+            </div>
+            <div class="single-box">
+                <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+                Subscription
+            </div>
+            <div class="single-box">
+                <img class="smaller" src="../assets/img/buy-comics-shop-locator.png" alt="">
+                Comic Shop Locator
+            </div>
+            <div class="single-box">
+                <img src="../assets/img/buy-dc-power-visa.svg" alt="">
+                DC Power Visa
+            </div>
+    </div>
     </div>
 </template>
 
@@ -32,12 +34,17 @@ export default {
 <style scoped lang="scss">
 @import '../style/variables';
 
-.info-area{
+.container{
     background-color: $brand-secondary-color;
+}
+
+.info-area{
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
 
     .single-box{
         display: flex;

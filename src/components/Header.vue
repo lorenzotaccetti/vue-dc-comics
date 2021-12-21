@@ -71,6 +71,7 @@ export default {
     width: 80%;
     margin: auto;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
 
     .logo{
@@ -80,6 +81,7 @@ export default {
             display: inline-block;
             width: 90px;
             vertical-align: middle;
+            margin-left: 5px;
         }
     }
 

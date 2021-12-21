@@ -92,17 +92,19 @@
                 <img src="../assets/img/dc-logo-bg.png" alt="">
             </div>
         </div>
-        <div class="bottom-footer">
-            <div class="btn">
-                <button>Sign-Up Now!</button>
-            </div>
-            <div class="socials">
-                <div>Follow Us</div>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-pinterest-p"></i>
-                <i class="fas fa-map-marker-alt"></i>
+        <div class="background">
+            <div class="bottom-footer">
+                <div class="btn">
+                    <button>Sign-Up Now!</button>
+                </div>
+                <div class="socials">
+                    <div>Follow Us</div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
             </div>
         </div>
     </div>
@@ -117,13 +119,18 @@ export default {
 <style scoped lang="scss">
 @import '../style/variables';
 
-.top-footer{
+.footer{
     background-image: url(../assets/img/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.top-footer{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
 
     .footer-links{
         display: flex;
@@ -155,11 +162,16 @@ export default {
     }
 }
 
-.bottom-footer{
+.background{
     background-color: $brand-primary-color;
+}
+
+.bottom-footer{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
 
     .btn{
         padding: 20px;
