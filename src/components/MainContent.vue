@@ -123,7 +123,7 @@ export default {
     width: 80%;
     margin: auto;
     color: white;
-    padding: 65px 0 30px;
+    padding: 75px 0 30px;
     display: flex;
     flex-wrap: wrap;
 
