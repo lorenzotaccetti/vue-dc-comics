@@ -9,9 +9,9 @@
                 <div class="comic-title">
                     {{element.series}}
                 </div>
-                <div class="comic-price">
+                <!-- <div class="comic-price">
                     {{element.price}}
-                </div>
+                </div> -->
             </div>
              <div class="current-button">
             <a href="#">Current Series</a>
@@ -140,23 +140,23 @@ export default {
         flex-direction: column;
 
         .comic-image{
-            height: 50%;
+            width: 100%;
+            height: 55%;
             overflow: hidden;
             margin-bottom: 20px;
         }
 
         .comic-title{
-            margin-bottom: 10px;
             width: 80%;
         }
 
-        .comic-price{
-            display: none;
-        }
+        // .comic-price{
+        //     display: none;
+        // }
 
-        &:hover .comic-price{
-            display: inline-block;
-        }
+        // &:hover .comic-price{
+        //     display: inline-block;
+        // }
     }
 }
 
