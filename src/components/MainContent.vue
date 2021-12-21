@@ -13,6 +13,9 @@
                     {{element.price}}
                 </div>
             </div>
+             <div class="current-button">
+            <a href="#">Current Series</a>
+        </div>
         </div>
         <div class="load-button">
             <a href="#">Load More</a>
@@ -110,6 +113,7 @@ export default {
 
 .main-content{
     background-color: $brand-primary-color;
+    position: relative;
 }
 
 .jumbotron{
@@ -126,6 +130,7 @@ export default {
     padding: 75px 0 30px;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 
     .single-box{
         width: calc(100% / 6);
@@ -152,6 +157,22 @@ export default {
         &:hover .comic-price{
             display: inline-block;
         }
+    }
+}
+
+.current-button{
+    position: absolute;
+    top: -20px;
+    left: -10px;
+
+    a{
+        text-decoration: none;
+        color: white;
+        background-color: $brand-secondary-color;
+        border: 3px solid $brand-secondary-color;
+        text-transform: uppercase;
+        font-size: 30px;
+        padding: 10px 20px;
     }
 }
 
